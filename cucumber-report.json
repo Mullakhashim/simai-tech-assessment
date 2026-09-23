@@ -11,16 +11,16 @@
         "steps": [
           {
             "result": {
-              "status": "passed",
-              "duration": 1079497403
+              "status": "skipped",
+              "duration": 0
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "passed",
-              "duration": 357973330
+              "status": "skipped",
+              "duration": 0
             },
             "arguments": [],
             "keyword": "Given ",
@@ -32,8 +32,8 @@
           },
           {
             "result": {
-              "status": "passed",
-              "duration": 72058665
+              "status": "skipped",
+              "duration": 0
             },
             "arguments": [],
             "keyword": "Then ",
@@ -45,8 +45,8 @@
           },
           {
             "result": {
-              "status": "passed",
-              "duration": 551503866
+              "status": "skipped",
+              "duration": 0
             },
             "keyword": "After",
             "hidden": true

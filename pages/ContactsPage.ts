@@ -19,7 +19,7 @@ export class ContactsPage {
     return (
       process.env.SALESFORCE_BASE_URL ??
       process.env.LOGIN_URL ??
-      "https://lls.my.salesforce-sites.com/saml/StartSSO"
+      "https://salesforce.com"
     );
   }
 
