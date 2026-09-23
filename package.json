@@ -1,0 +1,23 @@
+{
+  "name": "tech-assessment",
+  "version": "1.0.0",
+  "description": "Playwright + Cucumber (BDD) automation for the Salesforce Contacts assessment",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:feature": "cucumber-js features/contacts.feature",
+    "playwright:install": "playwright install chromium",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2",
+    "eslint": "^10.11.0",
+    "playwright": "^1.63.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.70.1"
+  }
+}
