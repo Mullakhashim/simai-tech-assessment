@@ -31,10 +31,42 @@ export class ContactsPage {
 
   async login(username: string, password: string): Promise<void> {
     await this.page
-      .getByRole("textbox", { name: "Username" })
+      .getByRole("textbox", { name: "Interpreter / Agent ID" })
       .fill(username);
-    await this.page.getByRole("textbox", { name: "Password" }).fill(password);
+    await this.page.getByRole("textbox", { name: "PIN" }).fill(password);
     await this.page.getByRole("button", { name: "Login" }).click();
     await this.page.waitForLoadState("domcontentloaded");
+  }
+
+  async openAppLauncher(): Promise<void> {
+    // TODO(live): confirm the App Launcher ("waffle") selector.
+    await this.page.pause(); // Pauses execution
+    await this.page.getByRole("link", { name: "All Tabs" }).click();
+  }
+
+  async openContactsApp(): Promise<void> {
+    // TODO(live): confirm app search + selection selectors.
+    await this.page.getByRole("link", { name: "Contacts Contacts" }).click();
+  }
+
+  async switchListView(viewName: string): Promise<void> {
+      await this.page.getByLabel("*View:").selectOption({ label: viewName });
+  }
+
+  async countContacts(): Promise<number> {
+    const rows = this.page.locator(".x-grid3-row");
+    return rows.count();
+  }
+
+  async openContact(fullName: string): Promise<void> {
+    await this.page.getByRole("link", { name: fullName }).click();
+  }
+
+  async readEmail(): Promise<string> {
+    const emailText = await this.page
+      .locator('a[href^="mailto:"]')
+      .first()
+      .textContent();
+    return emailText?.trim() ?? "";
   }
 }

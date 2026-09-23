@@ -5,7 +5,11 @@
       "features/support/**/*.ts",
       "features/step-definitions/**/*.ts"
     ],
-    "format": ["progress-bar"],
+    "format": [
+      "progress-bar",
+      "json:cucumber-report.json",
+      "html:cucumber-report.html"
+    ],  
     "publishQuiet": true
   }
 }

@@ -1,6 +1,7 @@
 import { Given, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { CustomWorld } from "../support/world";
+//import { ContactsPage } from "../../pages/ContactsPage";
 
 // ---------------------------------------------------------------------
 // Trivial smoke-test steps (assessment step 5: "Verify the install").
@@ -8,7 +9,9 @@ import { CustomWorld } from "../support/world";
 // ---------------------------------------------------------------------
 
 Given("I open the Playwright homepage", async function (this: CustomWorld) {
-  await this.page.goto("https://playwright.dev/", { waitUntil: "domcontentloaded" });
+  await this.page.goto("https://playwright.dev/", {
+    waitUntil: "domcontentloaded",
+  });
 });
 
 Then(

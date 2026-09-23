@@ -7,8 +7,9 @@
 # read Email) will be added here during the assessment.
 # =============================================================
 
-Feature: Contact Management
+Feature: Contact Email
 
   Scenario: Verify the framework runs against a real browser
     Given I open the Playwright homepage
     Then the page title should contain "Playwright"
+

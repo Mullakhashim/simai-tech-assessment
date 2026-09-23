@@ -1,0 +1,66 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "contact-email;verify-the-framework-runs-against-a-real-browser",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify the framework runs against a real browser",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1079497403
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 357973330
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open the Playwright homepage",
+            "match": {
+              "location": "features/step-definitions/contacts.steps.ts:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 72058665
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the page title should contain \"Playwright\"",
+            "match": {
+              "location": "features/step-definitions/contacts.steps.ts:17"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 551503866
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "contact-email",
+    "line": 10,
+    "keyword": "Feature",
+    "name": "Contact Email",
+    "tags": [],
+    "uri": "features/contacts.feature"
+  }
+]
